@@ -1,0 +1,34 @@
+ifblock BSP_PIC32MX_BB_LED
+
+menu "Select BSP Features"
+	depends on USE_BSP
+	depends on BSP_PIC32MX_BB_LED
+
+config BSP_CONFIGURE_PIC32MX_BB_LED
+    depends on USE_BSP
+    depends on BSP_PIC32MX_BB_LED
+    set BSP_PIN_16_FUNCTION_NAME to "BSP_LED_RED" 
+    set BSP_PIN_16_FUNCTION_TYPE to "LED_AH" 
+    set BSP_PIN_17_FUNCTION_NAME to "BSP_LED_BLUE" 
+    set BSP_PIN_17_FUNCTION_TYPE to "LED_AH" 
+    bool
+
+endmenu
+
+
+menu "Custom Board Configurations for PIC32MX BB LED"
+    depends on USE_BSP
+
+import PIC32MX_BB_LED_IMPORT_ICB "Select Custom Configuration To Import" 
+    default "../*/*.mhc"
+    ---help---
+    IDH_HTML_Board_Support_Package_Help
+    ---endhelp---
+
+template BSP_pic32mx_bb_led_H "$HARMONY_VERSION_PATH/bsp/pic32mx_bb_led/templates/bsp.h.ftl" to "$PROJECT_HEADER_FILES/app/system_config/$CONFIGURATION/bsp/bsp.h"
+template BSP_pic32mx_bb_led_C "$HARMONY_VERSION_PATH/bsp/pic32mx_bb_led/templates/bsp.c.ftl" to "$PROJECT_SOURCE_FILES/app/system_config/$CONFIGURATION/bsp/bsp.c"
+
+compiler BSP_COMPILER_INCLUDE_pic32mx_bb_led includepath "$PROJECT_HEADER_FILES/system_config/$CONFIGURATION/bsp"
+endmenu
+
+endif

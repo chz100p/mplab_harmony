@@ -7,6 +7,7 @@ menu "Select BSP Features"
 config BSP_CONFIGURE_PIC32MX_BB_LED
     depends on USE_BSP
     depends on BSP_PIC32MX_BB_LED
+    select BSP_TRIGGER
     set BSP_PIN_16_FUNCTION_NAME to "BSP_LED_BLUE" 
     set BSP_PIN_16_FUNCTION_TYPE to "LED_AH" 
     set BSP_PIN_17_FUNCTION_NAME to "BSP_LED_RED" 

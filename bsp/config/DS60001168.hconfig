@@ -34,7 +34,6 @@ config BSP_CUSTOM
 	
 config BSP_PIC32MX_BB_LED
     depends on USE_BSP
-    select BSP_TRIGGER
     bool "PIC32MX BB LED"
 	
 config BSP_PIC32MX_BB_USB
@@ -47,6 +46,7 @@ endchoice
 source "$HARMONY_VERSION_PATH/bsp/pic32mx_bt_sk/config/bsp.hconfig"
 source "$HARMONY_VERSION_PATH/bsp/pic32mx_usb_digital_audio_ab/config/bsp.hconfig"
 source "$HARMONY_VERSION_PATH/bsp/pic32mx_bb_led/config/bsp.hconfig"
+source "$HARMONY_VERSION_PATH/bsp/pic32mx_bb_usb/config/bsp.hconfig"
 
 config BSP_DS60001168_COMMON
     set JTAGEN optionally to "OFF"

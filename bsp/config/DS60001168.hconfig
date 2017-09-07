@@ -34,7 +34,13 @@ config BSP_CUSTOM
 	
 config BSP_PIC32MX_BB_LED
     depends on USE_BSP
+    select BSP_TRIGGER
     bool "PIC32MX BB LED"
+	
+config BSP_PIC32MX_BB_USB
+    depends on USE_BSP
+    select BSP_TRIGGER
+    bool "PIC32MX BB USB"
 	
 endchoice	
 

@@ -51,6 +51,68 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 // *****************************************************************************
 /* Data Structure: 
+    switch_port_channel_map[]
+
+  Summary:
+    Maps each switch to its port channel
+  
+  Description:
+    The switch_port_channel_map array, indexed by BSP_SWITCH, maps each switch 
+    to its port channel.
+
+  Remarks:
+    Refer to bsp.h for usage information.
+*/
+static const PORTS_CHANNEL switch_port_channel_map[] =
+{
+    PORT_CHANNEL_A,
+    PORT_CHANNEL_B,
+    PORT_CHANNEL_B
+};
+
+// *****************************************************************************
+/* Data Structure: 
+    switch_port_bit_pos_map[]
+
+  Summary:
+    Maps each switch to its port bit position
+  
+  Description:
+    The switch_port_bit_pos_map array, indexed by BSP_SWITCH, maps each switch to its port bit position
+
+  Remarks:
+    Refer to bsp.h for usage information.
+*/
+static const PORTS_BIT_POS switch_port_bit_pos_map[] =
+{
+    PORTS_BIT_POS_3,
+    PORTS_BIT_POS_4,
+    PORTS_BIT_POS_13
+};
+
+
+// *****************************************************************************
+/* Function: 
+    void BSP_SwitchStateGet(BSP_SWITCH switch);
+
+  Summary:
+    Returns the present state (pressed or not pressed) of the specified switch.
+  
+  Description:
+    This function returns the present state (pressed or not pressed) of the
+    specified switch.
+
+  Remarks:
+    Refer to bsp.h for usage information.
+*/
+
+BSP_SWITCH_STATE BSP_SwitchStateGet( BSP_SWITCH bspSwitch )
+{
+    return ( PLIB_PORTS_PinGet(PORTS_ID_0, switch_port_channel_map[bspSwitch], switch_port_bit_pos_map[bspSwitch]) );
+}
+
+// *****************************************************************************
+/* Data Structure: 
     led_port_channel_map[]
 
   Summary:
@@ -65,6 +127,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 */
 static const PORTS_CHANNEL led_port_channel_map[] =
 {
+    PORT_CHANNEL_B,
     PORT_CHANNEL_B,
     PORT_CHANNEL_B
 };
@@ -86,7 +149,8 @@ static const PORTS_CHANNEL led_port_channel_map[] =
 static const PORTS_BIT_POS led_port_bit_pos_map[] =
 {
     PORTS_BIT_POS_7,
-    PORTS_BIT_POS_8
+    PORTS_BIT_POS_8,
+    PORTS_BIT_POS_9
 };
 
 // *****************************************************************************
@@ -105,6 +169,7 @@ static const PORTS_BIT_POS led_port_bit_pos_map[] =
 */
 static const BSP_LED_ACTIVE_LEVEL led_active_level_map[] =
 {
+   BSP_LED_ACTIVE_HIGH,
    BSP_LED_ACTIVE_HIGH,
    BSP_LED_ACTIVE_HIGH
 };
@@ -267,7 +332,8 @@ void BSP_Initialize(void )
 
     /* Switch off LEDs */
     BSP_LEDOff(BSP_LED_3);
-    BSP_LEDOff(BSP_LED_RED);
+    BSP_LEDOff(BSP_LED_2);
+    BSP_LEDOff(BSP_LED_1);
 }
 
 /*******************************************************************************

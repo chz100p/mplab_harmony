@@ -147,7 +147,7 @@
       <Template dnOrder="2">
         <Name dnOrder="0">bsp.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/bbled/bsp</Path>
-        <Checksum dnOrder="2">04745BF6DC0D2E7FE0A8D66E01B23E7C</Checksum>
+        <Checksum dnOrder="2">5757BA2888649A717623D3E73DAA5FB3</Checksum>
       </Template>
       <Template dnOrder="3">
         <Name dnOrder="0">app.c</Name>
@@ -181,12 +181,12 @@
       <Template dnOrder="9">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/bbled/framework/system/ports/src</Path>
-        <Checksum dnOrder="2">4AAD8F9C13EE87EED677C858E9122B61</Checksum>
+        <Checksum dnOrder="2">19E07CDB48EF69CD32864F328E9243DB</Checksum>
       </Template>
       <Template dnOrder="10">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/bbled</Path>
-        <Checksum dnOrder="2">BBDE01893720B842BFCB639C66BC4077</Checksum>
+        <Checksum dnOrder="2">465B35402DB6D8EA3CE43553942E2793</Checksum>
       </Template>
       <Template dnOrder="11">
         <Name dnOrder="0">system_init.c</Name>
@@ -196,12 +196,12 @@
       <Template dnOrder="12">
         <Name dnOrder="0">sys_clk_pic32mx.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/bbled/framework/system/clk/src</Path>
-        <Checksum dnOrder="2">8C1B5936A765E47ED1273EF0D134FEA2</Checksum>
+        <Checksum dnOrder="2">7860437A8522FB7BA3C86A69B88CE612</Checksum>
       </Template>
       <Template dnOrder="13">
         <Name dnOrder="0">bsp.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/bbled/bsp</Path>
-        <Checksum dnOrder="2">ACC3481224EA7BA69CC3EE149A5061F1</Checksum>
+        <Checksum dnOrder="2">CFCF6611725935624B7813E8D8992543</Checksum>
       </Template>
       <Template dnOrder="14">
         <Name dnOrder="0">system_tasks.c</Name>

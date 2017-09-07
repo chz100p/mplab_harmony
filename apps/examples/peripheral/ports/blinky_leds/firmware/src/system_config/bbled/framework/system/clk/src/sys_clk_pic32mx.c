@@ -100,10 +100,18 @@ void SYS_CLK_Initialize( const SYS_CLK_INIT const * clkInit )
     PLIB_OSC_PBClockDivisorSet (OSC_ID_0, 0, 2 );
 
  
-    /* Disable REFCLKO1*/
-    PLIB_OSC_ReferenceOscDisable ( OSC_ID_0, OSC_REFERENCE_1 );
+    /* Enable and configure REFCLKO1*/
+    
+    /* ROSEL System Clock SYSCLK */
+    PLIB_OSC_ReferenceOscBaseClockSelect ( OSC_ID_0, OSC_REFERENCE_1, 0 );
+    /* RODIV */
+    PLIB_OSC_ReferenceOscDivisorValueSet ( OSC_ID_0, OSC_REFERENCE_1, 5 );
+    /* ROTRIM */
+    PLIB_OSC_ReferenceOscTrimSet ( OSC_ID_0, OSC_REFERENCE_1, 0 );
+
+    PLIB_OSC_ReferenceOscEnable ( OSC_ID_0, OSC_REFERENCE_1 );
     /* Disable REFCLK1_OE*/
-    PLIB_OSC_ReferenceOutputDisable ( OSC_ID_0, OSC_REFERENCE_1 );
+    PLIB_OSC_ReferenceOutputEnable ( OSC_ID_0, OSC_REFERENCE_1 );
 
     SYS_DEVCON_SystemLock ( );
 }
@@ -217,7 +225,8 @@ inline uint32_t SYS_CLK_PeripheralFrequencyGet ( CLK_BUSES_PERIPHERAL peripheral
 
 inline uint32_t SYS_CLK_ReferenceFrequencyGet ( CLK_BUSES_REFERENCE referenceBus )
 {
-	return 0;
+    return SYS_CLK_BUS_REFERENCE_1;
+
 
 }
 

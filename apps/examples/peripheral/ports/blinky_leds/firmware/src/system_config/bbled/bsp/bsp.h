@@ -58,6 +58,91 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 
 // *****************************************************************************
+/* BSP Switch.
+
+  Summary:
+    Defines the switches available on this board.
+
+  Description:
+    This enumeration defines the switches available on this board.
+
+  Remarks:
+    None.
+*/
+
+typedef enum
+{
+    BSP_SWITCH_1 = 0,
+    BSP_SWITCH_2 = 1,
+    BSP_SWITCH_3 = 2
+} BSP_SWITCH;
+
+
+// *****************************************************************************
+/* BSP Switch state.
+
+  Summary:
+    Defines possible states of the switches on this board.
+
+  Description:
+    This enumeration defines the possible states of the switches on this board.
+
+  Remarks:
+    None.
+*/
+
+typedef enum
+{
+    /* Switch pressed */
+    BSP_SWITCH_STATE_PRESSED =/*DOM-IGNORE-BEGIN*/ 0/*DOM-IGNORE-END*/,
+
+   /* Switch not pressed */
+    BSP_SWITCH_STATE_RELEASED =/*DOM-IGNORE-BEGIN*/ 1/*DOM-IGNORE-END*/
+
+} BSP_SWITCH_STATE;
+
+
+// *****************************************************************************
+/* Function: 
+    BSP_SWITCH_STATE BSP_SwitchStateGet(BSP_SWITCH switch);
+
+  Summary:
+    Returns the present state (pressed or not pressed) of the specified switch.
+  
+  Description:
+    This function returns the present state (pressed or not pressed) of the
+    specified switch.
+
+  Precondition:
+    BSP_Initialize() should have been called.
+
+  Parameters:
+    switch  - The switch whose state needs to be obtained.
+  
+  Returns:
+    The pressed released state of the switch.
+
+  Example:
+    <code>
+    
+    // Initialize the BSP
+    BSP_Initialize();
+
+    // Check the state of the switch.
+    if(BSP_SWITCH_STATE_PRESSED == BSP_SwitchStateGet(BSP_SWITCH_1))
+    {
+        // This means that Switch 1 on the board is pressed.
+    }
+
+    </code>
+
+  Remarks:
+    None                                                                   
+*/
+
+BSP_SWITCH_STATE BSP_SwitchStateGet(BSP_SWITCH bspSwitch);
+
+// *****************************************************************************
 /* BSP_LED.
 
   Summary:
@@ -72,7 +157,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 typedef enum
 {
     BSP_LED_3 = 0,
-    BSP_LED_RED = 1
+    BSP_LED_2 = 1,
+    BSP_LED_1 = 2
 } BSP_LED;
 
 

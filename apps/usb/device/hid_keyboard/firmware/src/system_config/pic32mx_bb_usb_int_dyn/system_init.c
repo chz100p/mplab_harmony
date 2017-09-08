@@ -84,7 +84,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config FPLLIDIV =   DIV_2
 #pragma config FPLLMUL =    MUL_20
 #pragma config FPLLODIV =   DIV_2
-#pragma config UPLLIDIV =   DIV_2
+#pragma config UPLLIDIV =   DIV_1
 #pragma config UPLLEN =     ON
 /*** DEVCFG3 ***/
 

@@ -243,7 +243,7 @@
       <Template dnOrder="2">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx_bb_usb_int_dyn</Path>
-        <Checksum dnOrder="2">A0F864224497F268148FA270A26D041C</Checksum>
+        <Checksum dnOrder="2">09F9F6DC2D4E0CE4C3FDD3A2F1DEF45F</Checksum>
         <ProjectFileChecksum dnOrder="3">A539F4EFCB27C594C9BA902160E90D92</ProjectFileChecksum>
       </Template>
       <Template dnOrder="3">
@@ -273,7 +273,7 @@
       <Template dnOrder="8">
         <Name dnOrder="0">sys_clk_pic32mx.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_bb_usb_int_dyn/framework/system/clk/src</Path>
-        <Checksum dnOrder="2">746206E30B4FA8E6FA7AE67D3801EBAC</Checksum>
+        <Checksum dnOrder="2">7860437A8522FB7BA3C86A69B88CE612</Checksum>
       </Template>
       <Template dnOrder="9">
         <Name dnOrder="0">sys_devcon_pic32mx.c</Name>
@@ -302,7 +302,7 @@
       <Template dnOrder="14">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_bb_usb_int_dyn</Path>
-        <Checksum dnOrder="2">4D61A94CC34F9A216616AE45E21E250C</Checksum>
+        <Checksum dnOrder="2">EA373141AED589BD2F9DDE60D1444CE4</Checksum>
       </Template>
       <Template dnOrder="15">
         <Name dnOrder="0">sys_devcon_local.h</Name>

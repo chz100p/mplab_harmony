@@ -61,6 +61,16 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system_definitions.h"
 #include "keyboard.h"
 
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Constants
+// *****************************************************************************
+// *****************************************************************************
+
+/* Modify this value to alter the LED blink rate */
+#define APP_LED_BLINK_DELAY     50  //50 mili second
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Type Definitions
@@ -80,8 +90,11 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 typedef enum
 {
-	/* Application's state machine's initial state. */
-	APP_STATE_INIT=0,
+    /* Create the Timer Object */
+    APP_STATE_TIMER_OBJECT_CREATE=0,
+
+    /* Application's state machine's initial state. */
+	APP_STATE_INIT,
 
 	/* Application waits for configuration in this state */
     APP_STATE_WAIT_FOR_CONFIGURATION,
@@ -169,6 +182,8 @@ typedef struct
 
     /* Switch debounce timer */
     unsigned int switchDebounceTimer;
+
+    SYS_TMR_HANDLE tmrServiceHandle;
 
 } APP_DATA;
 

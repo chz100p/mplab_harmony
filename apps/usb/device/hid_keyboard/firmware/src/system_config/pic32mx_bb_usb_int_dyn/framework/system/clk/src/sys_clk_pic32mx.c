@@ -105,9 +105,9 @@ void SYS_CLK_Initialize( const SYS_CLK_INIT const * clkInit )
     /* ROSEL System Clock SYSCLK */
     PLIB_OSC_ReferenceOscBaseClockSelect ( OSC_ID_0, OSC_REFERENCE_1, 0 );
     /* RODIV */
-    PLIB_OSC_ReferenceOscDivisorValueSet ( OSC_ID_0, OSC_REFERENCE_1, 5 );
+    PLIB_OSC_ReferenceOscDivisorValueSet ( OSC_ID_0, OSC_REFERENCE_1, 2 );
     /* ROTRIM */
-    PLIB_OSC_ReferenceOscTrimSet ( OSC_ID_0, OSC_REFERENCE_1, 0 );
+    PLIB_OSC_ReferenceOscTrimSet ( OSC_ID_0, OSC_REFERENCE_1, 256 );
 
     PLIB_OSC_ReferenceOscEnable ( OSC_ID_0, OSC_REFERENCE_1 );
     /* Disable REFCLK1_OE*/

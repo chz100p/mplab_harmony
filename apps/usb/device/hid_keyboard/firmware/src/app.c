@@ -258,6 +258,41 @@ void APP_USBDeviceEventHandler(USB_DEVICE_EVENT event,
     }
 }
 
+#define STATE_LED_1 BSP_LED_1
+#define STATE_LED_W (500/APP_LED_BLINK_DELAY)
+#define STATE_LED_WH (STATE_LED_W/2)
+void TimerCallBack(uintptr_t context, uint32_t tickCount)
+{
+    static uint32_t s = 0;
+    static uint32_t w = STATE_LED_W;
+    
+    if(s){
+        if(w==STATE_LED_W){
+            BSP_LEDOn(STATE_LED_1);
+        }
+        if(w==STATE_LED_W-1){
+            BSP_LEDOff(STATE_LED_1);
+        }
+    }else{
+        if(w==STATE_LED_W){
+            BSP_LEDOn(STATE_LED_1);
+        }
+        if(w==STATE_LED_WH){
+            BSP_LEDOff(STATE_LED_1);
+        }
+    }
+    if (w) {
+        --w;
+    }
+    if(w==0) {
+        w = STATE_LED_W;
+        if(s){
+            --s;
+        } else {
+            s = (uint32_t) (appData.state);
+        }
+    }
+}
 
 // *****************************************************************************
 // *****************************************************************************
@@ -415,7 +450,7 @@ void APP_StateReset(void)
 void APP_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
-    appData.state = APP_STATE_INIT;
+    appData.state = APP_STATE_TIMER_OBJECT_CREATE;
     
     appData.deviceHandle = USB_DEVICE_HANDLE_INVALID;
     appData.isConfigured = false;
@@ -462,6 +497,17 @@ void APP_Tasks ( void )
     /* Check the application's current state. */
     switch ( appData.state )
     {
+
+        /* Initial state is to create the timer object for periodic alarm */
+        case APP_STATE_TIMER_OBJECT_CREATE:
+        {
+            appData.tmrServiceHandle = SYS_TMR_ObjectCreate(APP_LED_BLINK_DELAY, 1, TimerCallBack, SYS_TMR_FLAG_PERIODIC);
+            if(SYS_TMR_HANDLE_INVALID != appData.tmrServiceHandle)
+            {
+                appData.state = APP_STATE_INIT;
+            }
+            break;
+        }
         /* Application's initial state. */
         case APP_STATE_INIT:
         {

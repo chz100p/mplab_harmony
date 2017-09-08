@@ -90,8 +90,22 @@ APP_DATA appData;
 */
 void TimerCallBack(uintptr_t context, uint32_t tickCount)
 {
+    if(BSP_SwitchStateGet(BSP_SWITCH_1)==BSP_SWITCH_STATE_PRESSED){
+        BSP_LEDOn(BSP_LED_1);
+    }else{
+        BSP_LEDOff(BSP_LED_1);
+    }
+    if(BSP_SwitchStateGet(BSP_SWITCH_2)==BSP_SWITCH_STATE_PRESSED){
+        BSP_LEDOn(BSP_LED_2);
+    }else{
+        BSP_LEDOff(BSP_LED_2);
+    }
+    if(BSP_SwitchStateGet(BSP_SWITCH_3)==BSP_SWITCH_STATE_PRESSED){
+        BSP_LEDOn(BSP_LED_3);
+    }else{
         /* Toggle LED */       
         BSP_LEDToggle(BSP_LED_3);
+    }
         
 }
 

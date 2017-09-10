@@ -568,7 +568,7 @@
         <targetDevice>PIC32CZ2038CA70144</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <platformTool>Simulator</platformTool>
         <languageToolchain></languageToolchain>
         <languageToolchainVersion></languageToolchainVersion>
         <platform>3</platform>
@@ -600,776 +600,174 @@
       <item path="../../../../../../framework/driver/tmr/drv_tmr.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/drv_tmr_compatibility.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/drv_tmr_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/src/drv_tmr_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/src/drv_tmr_variant_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/src/dynamic/drv_tmr.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/tmr/tmr_definitions_pic32m.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/drv_usbfs.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/drv_usbfs_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/src/drv_usbfs_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/src/drv_usbfs_variant_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/src/dynamic/drv_usbfs.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbfs/src/dynamic/drv_usbfs_device.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbhs/drv_usbhs.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbhs/src/drv_usbhs_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbhs/src/drv_usbhs_variant_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbhs/src/dynamic/drv_usbhs.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/driver/usb/usbhs/src/dynamic/drv_usbhs_device.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/common/sys_buffer.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/common/sys_common.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/common/sys_module.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/common/sys_queue.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/int/src/sys_int_pic32.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/int/src/sys_int_private.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/int/sys_int_mapping.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/ports/sys_ports_definitions.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/tmr/src/sys_tmr.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/tmr/src/sys_tmr_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../../../../../../framework/system/tmr/sys_tmr.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_config.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_init.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx460_pim_e16_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.c"
             ex="true"
@@ -1430,894 +828,179 @@
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_config.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_init.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_config.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_init.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/clk/src/sys_clk_pic32mz.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/src/sys_devcon_cache.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/src/sys_devcon_cache_pic32mz.S"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/src/sys_devcon_pic32mz.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_config.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_init.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
       <item path="../src/system_config/pic32mz_ef_sk_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
-        <ARM-AR>
-        </ARM-AR>
-        <ARM-AS>
-        </ARM-AS>
-        <ARM-AS-PRE>
-        </ARM-AS-PRE>
-        <ARM-CPP>
-        </ARM-CPP>
-        <ARM-GCC>
-        </ARM-GCC>
-        <ARM-Global>
-        </ARM-Global>
-        <ARM-LD>
-        </ARM-LD>
       </item>
-      <ARM-AR>
-        <property key="archiver-flags" value=""/>
-      </ARM-AR>
-      <ARM-AS>
-        <property key="announce-version" value="false"/>
-        <property key="include-paths" value=""/>
-        <property key="suppress-warnings" value="false"/>
-      </ARM-AS>
-      <ARM-AS-PRE>
-        <property key="announce-version" value="false"/>
-        <property key="include-paths" value=""/>
-        <property key="preprocessor-macros" value=""/>
-        <property key="preprocessor-macros-undefined" value=""/>
-        <property key="suppress-warnings" value="false"/>
-      </ARM-AS-PRE>
-      <ARM-CPP>
-        <property key="additional-warnings" value="true"/>
-        <property key="called-functions-located" value="true"/>
-        <property key="default-bitfield-type" value="false"/>
-        <property key="default-char-type" value="false"/>
-        <property key="disable-extra-code-exception" value="true"/>
-        <property key="disable-extra-code-generation" value="true"/>
-        <property key="extra-include-directories" value=""/>
-        <property key="extra-warnings" value="false"/>
-        <property key="fast-math" value="false"/>
-        <property key="garbage-collect-data" value="false"/>
-        <property key="garbage-collect-functions" value="false"/>
-        <property key="inhibit-all" value="false"/>
-        <property key="make-warnings-into-errors" value="false"/>
-        <property key="no-system-directories" value="false"/>
-        <property key="optimization-level" value=""/>
-        <property key="position-independent" value="false"/>
-        <property key="preprocess-only" value="false"/>
-        <property key="preprocessor-macros" value=""/>
-        <property key="preprocessor-macros-undefined" value=""/>
-        <property key="strict-ansi" value="false"/>
-        <property key="strict-ansi-errors" value="false"/>
-        <property key="syntax-only" value="false"/>
-        <property key="undefined-identifier" value="false"/>
-        <property key="unsafe-math" value="false"/>
-        <property key="use-rodata" value="false"/>
-        <property key="verbose" value="false"/>
-      </ARM-CPP>
-      <ARM-GCC>
-        <property key="additional-warnings" value="true"/>
-        <property key="called-functions-located" value="true"/>
-        <property key="default-bitfield-type" value="false"/>
-        <property key="default-char-type" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/system_config/pic32cz_ca70_xult_int_dyn;../src/pic32cz_ca70_xult_int_dyn;../../../../../../framework;../src/system_config/pic32cz_ca70_xult_int_dyn/framework;../src/system_config/pic32cz_ca70_xult_int_dyn/bsp;../../../../../../packs/pic32c_dfp;../../../../../../packs/arm/CMSIS/Core/Include"/>
-        <property key="extra-warnings" value="false"/>
-        <property key="fast-math" value="false"/>
-        <property key="garbage-collect-data" value="false"/>
-        <property key="garbage-collect-functions" value="false"/>
-        <property key="inhibit-all" value="false"/>
-        <property key="make-warnings-into-errors" value="false"/>
-        <property key="no-system-directories" value="false"/>
-        <property key="optimization-level" value=""/>
-        <property key="position-independent" value="false"/>
-        <property key="preprocessor-macros" value=""/>
-        <property key="preprocessor-macros-undefined" value=""/>
-        <property key="strict-ansi" value="false"/>
-        <property key="strict-ansi-errors" value="false"/>
-        <property key="support-ansi" value="false"/>
-        <property key="syntax-only" value="false"/>
-        <property key="undefined-identifier" value="false"/>
-        <property key="unsafe-math" value="false"/>
-        <property key="verbose" value="false"/>
-        <appendMe value="-D__PIC32C__ -DARM_MATH_CM7=true -Dscanf=iscanf -Dprintf=iprintf -D__PIC32CZ2038CA70144__ -DBOARD=SAMV71_XPLAINED_ULTRA -g3 -gdwarf-2 -std=gnu99 -fno-strict-aliasing --param max-inline-insns-single=500 -Og"/>
-      </ARM-GCC>
-      <ARM-Global>
-        <property key="bin" value="false"/>
-        <property key="common-include-directories" value=""/>
-        <property key="eep" value="false"/>
-        <property key="hex" value="true"/>
-        <property key="lss" value="false"/>
-        <property key="processor-mode" value="-mthumb"/>
-        <property key="srec" value="false"/>
-        <appendMe value="-mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16 -L&quot;../src/&quot; -Tdefault.ld"/>
-      </ARM-Global>
-      <ARM-LD>
-        <property key="additional-specs" value=""/>
-        <property key="exclude-standard-libraries" value="false"/>
-        <property key="extra-lib-directories" value=""/>
-        <property key="fast-math" value="false"/>
-        <property key="flash-segment" value=""/>
-        <property key="generate-map-file" value="true"/>
-        <property key="input-libraries" value=""/>
-        <property key="no-default-libs" value="false"/>
-        <property key="no-shared-libraries" value="false"/>
-        <property key="no-startup-files" value="false"/>
-        <property key="omit-symbol-information" value="false"/>
-        <property key="other-options" value=""/>
-        <property key="position-independent" value="false"/>
-        <property key="remove-unused-sections" value="true"/>
-        <property key="size-optimized-library" value="false"/>
-        <property key="sram-segment" value=""/>
-        <property key="unsafe-math" value="false"/>
-      </ARM-LD>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>
@@ -2687,7 +1370,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>SKDEPIC32PlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.42</languageToolchainVersion>
+        <languageToolchainVersion>1.44</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -4188,58 +2871,226 @@
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_config.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_init.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/bsp/bsp.c"
             ex="true"
@@ -4975,7 +3826,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.42</languageToolchainVersion>
+        <languageToolchainVersion>1.44</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -6076,58 +4927,226 @@
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_config.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_init.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.c"
             ex="true"
@@ -6802,7 +5821,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>RealICEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.42</languageToolchainVersion>
+        <languageToolchainVersion>1.44</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -7535,58 +6554,226 @@
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_config.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_init.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.c"
             ex="true"
@@ -8633,7 +7820,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.42</languageToolchainVersion>
+        <languageToolchainVersion>1.44</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <compileType>
@@ -9926,58 +9113,226 @@
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_config.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_init.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_bb_usb_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.c"
             ex="true"
@@ -12229,58 +11584,226 @@
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/bsp/bsp.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/clk/src/sys_clk_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon_local.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/src/sys_devcon_pic32mx.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/devcon/sys_devcon.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/framework/system/ports/src/sys_ports_static.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_config.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_definitions.h"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_exceptions.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_init.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_interrupt.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk2_int_dyn/system_tasks.c"
             ex="true"
             overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
       </item>
       <item path="../src/system_config/pic32mx_usb_sk3_int_dyn/bsp/bsp.c"
             ex="true"

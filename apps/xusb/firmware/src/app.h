@@ -86,8 +86,11 @@ extern "C" {
 
 typedef enum
 {
+    /* Create the Timer Object */
+    APP_STATE_TIMER_OBJECT_CREATE=0,
+
 	/* Application's state machine's initial state. */
-	APP_STATE_INIT=0,
+	APP_STATE_INIT,
 	APP_STATE_SERVICE_TASKS,
 
 	/* TODO: Define states used by the application state machine. */
@@ -114,6 +117,8 @@ typedef struct
     APP_STATES state;
 
     /* TODO: Define any additional data used by the application. */
+
+    SYS_TMR_HANDLE tmrServiceHandle;
 
 } APP_DATA;
 

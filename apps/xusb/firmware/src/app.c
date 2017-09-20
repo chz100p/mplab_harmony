@@ -78,15 +78,6 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 APP_DATA appData;
 
-/* Receive data buffer */
-uint8_t receivedDataBuffer[APP_READ_BUFFER_SIZE] APP_MAKE_BUFFER_DMA_READY;
-
-/* Transmit data buffer */
-uint8_t  transmitDataBuffer[APP_READ_BUFFER_SIZE] APP_MAKE_BUFFER_DMA_READY;
-
-/* The endpoint size is 64 for FS and 512 for HS */
-uint16_t endpointSize;
-
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -241,8 +232,209 @@ void APP_USBDeviceEventHandler(USB_DEVICE_EVENT event, void * eventData, uintptr
 // *****************************************************************************
 // *****************************************************************************
 
-/* TODO:  Add any necessary local functions.
-*/
+//General Declarations
+#define MILLIDEBOUNCE 20  //Debounce time in milliseconds
+#define NUMBUTTONS 14  //Number of all buttons
+#define NUMBUTTONSONLY 10 //Number of just buttons
+#define interval 150  //interval in milliseconds to update LED
+#define USB_TIMEOUT 12840  //packet timeout for USB
+
+//LED STYLE DEFINES
+#define NO_LED 0
+#define ONBOARD_LED 1
+#define EXTERNAL_LED 2
+
+//LED Pattern Defines
+#define ALLOFF 0x00
+#define ALLBLINKING 0x01
+#define FLASHON1 0x02
+#define FLASHON2 0x03
+#define FLASHON3 0x04
+#define FLASHON4 0x05
+#define ON1  0x06
+#define ON2  0x07
+#define ON3  0x08
+#define ON4  0x09
+#define ROTATING 0x0A
+#define BLINK   0x0B
+#define SLOWBLINK 0x0C
+#define ALTERNATE 0x0D
+
+//BUTTON MASK DEFINES
+#define R3_MASK 0x80
+#define L3_MASK 0x40
+#define BACK_MASK 0x20
+#define START_MASK 0x10
+#define DPAD_RIGHT_MASK 0x08
+#define DPAD_LEFT_MASK 0x04
+#define DPAD_DOWN_MASK 0x02
+#define DPAD_UP_MASK 0x01
+#define Y_MASK 0x80
+#define X_MASK 0x40
+#define B_MASK 0x20
+#define A_MASK 0x10
+#define LOGO_MASK 0x04
+#define RB_MASK 0x02
+#define LB_MASK 0x01
+
+//Byte location Definitions
+#define BUTTON_PACKET_1 2
+#define BUTTON_PACKET_2 3
+#define LEFT_TRIGGER_PACKET 4
+#define RIGHT_TRIGGER_PACKET 5
+#define LEFT_STICK_X_PACKET_LSB 6
+#define LEFT_STICK_X_PACKET_MSB 7
+#define LEFT_STICK_Y_PACKET_LSB 8
+#define LEFT_STICK_Y_PACKET_MSB 9
+#define RIGHT_STICK_X_PACKET_LSB 10
+#define RIGHT_STICK_X_PACKET_MSB 11
+#define RIGHT_STICK_Y_PACKET_LSB 12
+#define RIGHT_STICK_Y_PACKET_MSB 13
+
+//Pin Declarations
+#define pinUP 5  //Up on stick is pin 5
+#define pinDN 6  //Down on stick is pin 6
+#define pinLT 7  //Left on stick is pin 7
+#define pinRT 8  //Right on stick is pin 8
+#define pinB1 9  //Button 1 is pin 9 (Start of top row and across)
+#define pinB2 10  //Button 2 is pin 10
+#define pinB3 11  //Button 3 is pin 11
+#define pinB4 12  //Button 4 is pin 12
+#define pinB5 14  //Button 5 is pin 13 (Start of second row and across)
+#define pinB6 15  //Button 6 is pin 14
+#define pinB7 16  //Button 7 is pin 15
+#define pinB8 17  //Button 8 is pin 16
+#define pinST 18  //Start Button is pin 17
+#define pinSL 19  //Select Button is pin 18
+#define pinOBLED 13  //Onboard LED pin
+
+//Position of a button in the button status array
+#define POSUP 0
+#define POSDN 1
+#define POSLT 2
+#define POSRT 3
+#define POSB1 4
+#define POSB2 5
+#define POSB3 6
+#define POSB4 7
+#define POSB5 8
+#define POSB6 9
+#define POSB7 10
+#define POSB8 11
+#define POSST 12
+#define POSSL 13
+
+//Global Variables
+uint8_t buttonStatus[NUMBUTTONS]; //array Holds a "Snapshot" of the button status to parse and manipulate
+uint8_t TXData[20] = {0x00, 0x14, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //Holds USB transmit packet data
+uint8_t RXData[3] = {0x00, 0x00, 0x00}; //Holds USB receive packet data
+
+//Update the debounced button statuses
+//We are looking for falling edges since the boards are built
+//for common ground sticks
+
+void buttonUpdate() {
+    //  if (joystickUP.update()) {buttonStatus[POSUP] = joystickUP.fallingEdge();}
+    //  if (joystickDOWN.update()) {buttonStatus[POSDN] = joystickDOWN.fallingEdge();}
+    //  if (joystickLEFT.update()) {buttonStatus[POSLT] = joystickLEFT.fallingEdge();}
+    //  if (joystickRIGHT.update()) {buttonStatus[POSRT] = joystickRIGHT.fallingEdge();}
+    //  if (button1.update()) {buttonStatus[POSB1] = button1.fallingEdge();}
+    //  if (button2.update()) {buttonStatus[POSB2] = button2.fallingEdge();}
+    //  if (button3.update()) {buttonStatus[POSB3] = button3.fallingEdge();}
+    //  if (button4.update()) {buttonStatus[POSB4] = button4.fallingEdge();}
+    //  if (button5.update()) {buttonStatus[POSB5] = button5.fallingEdge();}
+    //  if (button6.update()) {buttonStatus[POSB6] = button6.fallingEdge();}
+    //  if (button7.update()) {buttonStatus[POSB7] = button7.fallingEdge();}
+    //  if (button8.update()) {buttonStatus[POSB8] = button8.fallingEdge();}
+    //  if (buttonSTART.update()) {buttonStatus[POSST] = buttonSTART.fallingEdge();}
+    //  if (buttonSELECT.update()) {buttonStatus[POSSL] = buttonSELECT.fallingEdge();}
+}
+
+//ProcessInputs
+//Button layout on fight stick
+//      SL ST
+//5  6  7  8
+//1  2  3  4
+//X360 Verson
+//      BK  ST
+//X  Y  RB  LB
+//A  B  RT  LT
+
+void processInputs() {
+    int i;
+    //Zero out button values
+    //Start at 2 so that you can keep the message type and packet size
+    //Then fill the rest with 0x00's
+    for (i = 2; i < 13; i++) {
+        TXData[i] = 0x00;
+    }
+
+    //Button Packet 1 (usb data array position 2)
+    //SOCD cleaner included
+    //Programmed behavior is UP+DOWN=UP and LEFT+RIGHT=NEUTRAL
+    //DPAD Up
+    if (buttonStatus[POSUP]) {
+        TXData[BUTTON_PACKET_1] |= DPAD_UP_MASK;
+    }
+    //DPAD Down
+    if (buttonStatus[POSDN] && !buttonStatus[POSUP]) {
+        TXData[BUTTON_PACKET_1] |= DPAD_DOWN_MASK;
+    }
+    //DPAD Left
+    if (buttonStatus[POSLT] && !buttonStatus[POSRT]) {
+        TXData[BUTTON_PACKET_1] |= DPAD_LEFT_MASK;
+    }
+    //DPAD Right
+    if (buttonStatus[POSRT] && !buttonStatus[POSLT]) {
+        TXData[BUTTON_PACKET_1] |= DPAD_RIGHT_MASK;
+    }
+
+    //Button Start OR Select OR Both (XBOX Logo)
+    if (buttonStatus[POSST] && buttonStatus[POSSL]) {
+        TXData[BUTTON_PACKET_2] |= LOGO_MASK;
+    } else if (buttonStatus[POSST]) {
+        TXData[BUTTON_PACKET_1] |= START_MASK;
+    } else if (buttonStatus[POSSL]) {
+        TXData[BUTTON_PACKET_1] |= BACK_MASK;
+    }
+
+    //Button Packet 2 (usb data array position 3)
+    //Button 1
+    if (buttonStatus[POSB1]) {
+        TXData[BUTTON_PACKET_2] |= A_MASK;
+    }
+    //Button 2
+    if (buttonStatus[POSB2]) {
+        TXData[BUTTON_PACKET_2] |= B_MASK;
+    }
+    //Button 5
+    if (buttonStatus[POSB5]) {
+        TXData[BUTTON_PACKET_2] |= X_MASK;
+    }
+    //Button 6
+    if (buttonStatus[POSB6]) {
+        TXData[BUTTON_PACKET_2] |= Y_MASK;
+    }
+    //Button 7
+    if (buttonStatus[POSB7]) {
+        TXData[BUTTON_PACKET_2] |= RB_MASK;
+    }
+    //Button 8
+    if (buttonStatus[POSB8]) {
+        TXData[BUTTON_PACKET_2] |= LB_MASK;
+    }
+
+    //Triggers (usb data array position 4 and 5)
+    //0xFF is full scale
+    //Button 3
+    if (buttonStatus[POSB3]) {
+        TXData[LEFT_TRIGGER_PACKET] = 0xFF;
+    }
+    //Button 4
+    if (buttonStatus[POSB4]) {
+        TXData[RIGHT_TRIGGER_PACKET] = 0xFF;
+    }
+}
 
 
 // *****************************************************************************
@@ -320,32 +512,24 @@ void APP_Tasks (void )
             /* Check if the device is configured */
             if(appData.deviceIsConfigured == true)
             {
-                if (USB_DEVICE_ActiveSpeedGet(appData.usbDevHandle) == USB_SPEED_FULL)
-                {
-                    endpointSize = 64;
-                }
-                else if (USB_DEVICE_ActiveSpeedGet(appData.usbDevHandle) == USB_SPEED_HIGH)
-                {
-                    endpointSize = 512;
-                }
                 if (USB_DEVICE_EndpointIsEnabled(appData.usbDevHandle, appData.endpointRx) == false )
                 {
                     /* Enable Read Endpoint */
                     USB_DEVICE_EndpointEnable(appData.usbDevHandle, 0, appData.endpointRx,
-                            USB_TRANSFER_TYPE_INTERRUPT, endpointSize);
+                            USB_TRANSFER_TYPE_INTERRUPT, 32);
                 }
                 if (USB_DEVICE_EndpointIsEnabled(appData.usbDevHandle, appData.endpointTx) == false )
                 {
                     /* Enable Write Endpoint */
                     USB_DEVICE_EndpointEnable(appData.usbDevHandle, 0, appData.endpointTx,
-                            USB_TRANSFER_TYPE_INTERRUPT, endpointSize);
+                            USB_TRANSFER_TYPE_INTERRUPT, 32);
                 }
                 /* Indicate that we are waiting for read */
                 appData.epDataReadPending = true;
 
                 /* Place a new read request. */
                 USB_DEVICE_EndpointRead(appData.usbDevHandle, &appData.readTranferHandle,
-                        appData.endpointRx, &receivedDataBuffer[0], sizeof(receivedDataBuffer) );
+                        appData.endpointRx, &RXData[0], sizeof(RXData) );
 
                 /* Device is ready to run the main task */
                 appData.state = APP_STATE_MAIN_TASK;
@@ -368,60 +552,76 @@ void APP_Tasks (void )
             }
             else if (appData.epDataReadPending == false)
             {
-                /* Look at the data the host sent, to see what kind of
-                 * application specific command it sent. */
-
-                switch(receivedDataBuffer[0])
-                {
-                    case 0x80:
-
-                        /* This is the toggle LED command */
-                        BSP_LEDToggle( APP_USB_LED_1 );
-                        BSP_LEDToggle( APP_USB_LED_2 );
-                        break;
-
-                    case 0x81:
-
-                        /* This is a switch check command. Check if the TX is free
-                         * for us to send a status. */
-
-                        if(appData.epDataWritePending == false)
-                        {
-                            /* Echo back to the host PC the command we are fulfilling
-                             * in the first byte.  In this case, the Get Pushbutton
-                             * State command. */
-
-                            transmitDataBuffer[0] = 0x81;
-
-                            if(BSP_SwitchStateGet(APP_USB_SWITCH_1) == BSP_SWITCH_STATE_PRESSED)
-                            {
-                                transmitDataBuffer[1] = 0x00;
-                            }
-                            else
-                            {
-                                transmitDataBuffer[1] = 0x01;
-                            }
-
-                            /* Send the data to the host */
-
-                            appData.epDataWritePending = true;
-
-                            USB_DEVICE_EndpointWrite ( appData.usbDevHandle, &appData.writeTranferHandle,
-                                    appData.endpointTx, &transmitDataBuffer[0],
-                                    sizeof(transmitDataBuffer),
-                                    USB_DEVICE_TRANSFER_FLAGS_MORE_DATA_PENDING);
-                        }
-                        break;
-                    default:
-                        break;
-                }
+//                /* Look at the data the host sent, to see what kind of
+//                 * application specific command it sent. */
+//
+//                switch(receivedDataBuffer[0])
+//                {
+//                    case 0x80:
+//
+//                        /* This is the toggle LED command */
+//                        BSP_LEDToggle( APP_USB_LED_1 );
+//                        BSP_LEDToggle( APP_USB_LED_2 );
+//                        break;
+//
+//                    case 0x81:
+//
+//                        /* This is a switch check command. Check if the TX is free
+//                         * for us to send a status. */
+//
+//                        if(appData.epDataWritePending == false)
+//                        {
+//                            /* Echo back to the host PC the command we are fulfilling
+//                             * in the first byte.  In this case, the Get Pushbutton
+//                             * State command. */
+//
+//                            transmitDataBuffer[0] = 0x81;
+//
+//                            if(BSP_SwitchStateGet(APP_USB_SWITCH_1) == BSP_SWITCH_STATE_PRESSED)
+//                            {
+//                                transmitDataBuffer[1] = 0x00;
+//                            }
+//                            else
+//                            {
+//                                transmitDataBuffer[1] = 0x01;
+//                            }
+//
+//                            /* Send the data to the host */
+//
+//                            appData.epDataWritePending = true;
+//
+//                            USB_DEVICE_EndpointWrite ( appData.usbDevHandle, &appData.writeTranferHandle,
+//                                    appData.endpointTx, &transmitDataBuffer[0],
+//                                    sizeof(transmitDataBuffer),
+//                                    USB_DEVICE_TRANSFER_FLAGS_MORE_DATA_PENDING);
+//                        }
+//                        break;
+//                    default:
+//                        break;
+//                }
 
                 appData.epDataReadPending = true ;
 
                 /* Place a new read request. */
                 USB_DEVICE_EndpointRead ( appData.usbDevHandle, &appData.readTranferHandle,
-                        appData.endpointRx, &receivedDataBuffer[0], sizeof(receivedDataBuffer) );
+                        appData.endpointRx, &RXData[0], sizeof(RXData) );
+            } else if (appData.epDataWritePending == false) {
+                //Poll Buttons
+                buttonUpdate();
+
+                //Process all inputs and load up the usbData registers correctly
+                processInputs();
+
+                /* Send the data to the host */
+
+                appData.epDataWritePending = true;
+
+                USB_DEVICE_EndpointWrite(appData.usbDevHandle, &appData.writeTranferHandle,
+                        appData.endpointTx, &TXData[0],
+                        sizeof (TXData),
+                        USB_DEVICE_TRANSFER_FLAGS_MORE_DATA_PENDING);
             }
+
             break;
 
         case APP_STATE_ERROR:

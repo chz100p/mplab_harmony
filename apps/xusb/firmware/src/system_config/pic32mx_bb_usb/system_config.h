@@ -245,6 +245,22 @@ extern "C" {
 
 /*** Application Instance 0 Configuration ***/
 
+#define APP_MAKE_BUFFER_DMA_READY
+
+#define APP_USB_LED_1 BSP_LED_1
+#define APP_USB_LED_2 BSP_LED_2
+#define APP_USB_LED_3 BSP_LED_3
+
+#define APP_USB_SWITCH_1 BSP_SWITCH_1
+
+#define APP_READ_BUFFER_SIZE 32
+
+/* Number of Endpoints used */    
+#define APP_EP_XUSB_IN  1
+
+/* Number of Endpoints used */    
+#define APP_EP_XUSB_OUT 2
+
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus
 }

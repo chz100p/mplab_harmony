@@ -89,11 +89,18 @@ typedef enum
     /* Create the Timer Object */
     APP_STATE_TIMER_OBJECT_CREATE=0,
 
-	/* Application's state machine's initial state. */
-	APP_STATE_INIT,
-	APP_STATE_SERVICE_TASKS,
+    /* Application's state machine's initial state. */
+    APP_STATE_INIT,
 
-	/* TODO: Define states used by the application state machine. */
+    /* Application waits for device configuration */
+    APP_STATE_WAIT_FOR_CONFIGURATION,
+
+    /* Application runs the main task */
+    APP_STATE_MAIN_TASK,
+
+    /* Application error occurred */
+    APP_STATE_ERROR
+
 
 } APP_STATES;
 
@@ -113,10 +120,42 @@ typedef enum
 
 typedef struct
 {
-    /* The application's current state */
+   /* Device layer handle returned by device layer open function */
+    USB_DEVICE_HANDLE usbDevHandle;
+
+    /* Application state*/
     APP_STATES state;
 
-    /* TODO: Define any additional data used by the application. */
+    /* Track device configuration */
+    bool deviceIsConfigured;
+
+    /* Configuration value */
+    uint8_t configValue;
+
+    /* speed */
+    USB_SPEED speed;
+
+    /* ep data sent */
+    bool epDataWritePending;
+
+    /* ep data received */
+    bool epDataReadPending;
+
+    /* Transfer handle */
+    USB_DEVICE_TRANSFER_HANDLE writeTranferHandle;
+
+    /* Transfer handle */
+    USB_DEVICE_TRANSFER_HANDLE readTranferHandle;
+
+    /* The transmit endpoint address */
+    USB_ENDPOINT_ADDRESS endpointTx;
+
+    /* The receive endpoint address */
+    USB_ENDPOINT_ADDRESS endpointRx;
+
+    /* Tracks the alternate setting */
+    uint8_t altSetting;
+
 
     SYS_TMR_HANDLE tmrServiceHandle;
 

@@ -295,6 +295,7 @@
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_bb_usb</Path>
         <Checksum dnOrder="2">3CE1BA2A6A39D83FBB6E09A07C390368</Checksum>
+        <ProjectFileChecksum dnOrder="3">5341173F136B9B2F5AA2E20593F3630A</ProjectFileChecksum>
       </Template>
       <Template dnOrder="16">
         <Name dnOrder="0">sys_devcon.c</Name>

@@ -247,6 +247,7 @@
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx_bb_usb</Path>
         <Checksum dnOrder="2">D9916C611E1BC993573386E97CFE44B1</Checksum>
+        <ProjectFileChecksum dnOrder="3">97D52D1F6A1A740E9F00066D2F665FBB</ProjectFileChecksum>
       </Template>
       <Template dnOrder="6">
         <Name dnOrder="0">sys_clk_pic32mx.c</Name>
@@ -294,7 +295,7 @@
       <Template dnOrder="15">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_bb_usb</Path>
-        <Checksum dnOrder="2">3CE1BA2A6A39D83FBB6E09A07C390368</Checksum>
+        <Checksum dnOrder="2">36E848A301976E5ABDD79D9394DCDC53</Checksum>
         <ProjectFileChecksum dnOrder="3">5341173F136B9B2F5AA2E20593F3630A</ProjectFileChecksum>
       </Template>
       <Template dnOrder="16">

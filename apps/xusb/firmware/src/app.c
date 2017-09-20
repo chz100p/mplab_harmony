@@ -349,6 +349,16 @@ void buttonUpdate() {
     //  if (buttonSTART.update()) {buttonStatus[POSST] = buttonSTART.fallingEdge();}
     //  if (buttonSELECT.update()) {buttonStatus[POSSL] = buttonSELECT.fallingEdge();}
     if (BSP_SwitchStateGet(APP_USB_SWITCH_1) == BSP_SWITCH_STATE_PRESSED) {
+        buttonStatus[POSLT] = 0x01;
+    } else {
+        buttonStatus[POSLT] = 0x00;
+    }
+    if (BSP_SwitchStateGet(APP_USB_SWITCH_2) == BSP_SWITCH_STATE_PRESSED) {
+        buttonStatus[POSRT] = 0x01;
+    } else {
+        buttonStatus[POSRT] = 0x00;
+    }
+    if (BSP_SwitchStateGet(APP_USB_SWITCH_3) == BSP_SWITCH_STATE_PRESSED) {
         buttonStatus[POSST] = buttonStatus[POSSL] = 0x01;
     } else {
         buttonStatus[POSST] = buttonStatus[POSSL] = 0x00;

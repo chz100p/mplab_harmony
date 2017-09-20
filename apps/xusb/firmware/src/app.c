@@ -348,6 +348,12 @@ void buttonUpdate() {
     //  if (button8.update()) {buttonStatus[POSB8] = button8.fallingEdge();}
     //  if (buttonSTART.update()) {buttonStatus[POSST] = buttonSTART.fallingEdge();}
     //  if (buttonSELECT.update()) {buttonStatus[POSSL] = buttonSELECT.fallingEdge();}
+    if (BSP_SwitchStateGet(APP_USB_SWITCH_1) == BSP_SWITCH_STATE_PRESSED) {
+        buttonStatus[POSST] = buttonStatus[POSSL] = 0x01;
+    } else {
+        buttonStatus[POSST] = buttonStatus[POSSL] = 0x00;
+    }
+
 }
 
 //ProcessInputs
